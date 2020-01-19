@@ -1,0 +1,7 @@
+{
+  "ch": {
+    "jdbcUrl": "jdbc:clickhouse://ch-server/system",
+    "dataSource.user": "default",
+    "dataSource.password": ""
+  }
+}

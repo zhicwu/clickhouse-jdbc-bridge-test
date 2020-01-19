@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  ch-server:
+    image: yandex/clickhouse-server:19.16.10.44
+    hostname: ch-server
+    volumes: 
+        - ./ch-conf:/etc/clickhouse-server
+
+  jdbc-bridge:
+    image: zhicwu/clickhouse-datasource-bridge:0.1.0
+    hostname: jdbc-bridge
+    volumes: 
+      - ./config:/app/config
