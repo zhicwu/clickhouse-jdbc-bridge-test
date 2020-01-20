@@ -1,6 +1,6 @@
 {
   "ch": {
-    "jdbcUrl": "jdbc:clickhouse://ch-server/system",
+    "jdbcUrl": "jdbc:clickhouse://ch-server:8123/system?compress=false",
     "dataSource.user": "default",
     "dataSource.password": ""
   }
